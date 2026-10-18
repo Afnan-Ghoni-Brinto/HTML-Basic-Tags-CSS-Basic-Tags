@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Website Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learning Basic HTML Tags">
+
+    <title>All Basic HTML Tags</title>
+</head>
+
+<body>
+
+    <!-- 1. Headings -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <hr>
+
+    <!-- 2. Paragraph -->
+    <p>This is a paragraph.</p>
+
+    <!-- 3. Line Break -->
+    <p>Hello <br> World!</p>
+
+    <!-- 4. Text Formatting -->
+    <b>Bold Text</b><br>
+    <strong>Important Text</strong><br>
+    <i>Italic Text</i><br>
+    <em>Emphasized Text</em><br>
+    <u>Underlined Text</u><br>
+    <mark>Highlighted Text</mark><br>
+    <small>Small Text</small><br>
+    <del>Deleted Text</del><br>
+    <ins>Inserted Text</ins><br>
+
+    <!-- 5. Subscript and Superscript -->
+    <p>H<sub>2</sub>O</p>
+    <p>X<sup>2</sup> + Y<sup>2</sup></p>
+
+    <hr>
+
+    <!-- 6. Hyperlink -->
+    <h2>HTML Links</h2>
+
+    <a href="https://github.com">
+        Visit GitHub
+    </a>
+
+    <br><br>
+
+    <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+        Open Google
+    </a>
+
+    <hr>
+
+    <!-- 7. Image -->
+    <h2>HTML Image</h2>
+
+    <img
+        src="https://placehold.co/300x200"
+        alt="Example Image"
+        width="300"
+        height="200"
+    >
+
+    <hr>
+
+    <!-- 8. Unordered List -->
+    <h2>Unordered List</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <!-- 9. Ordered List -->
+    <h2>Ordered List</h2>
+
+    <ol>
+        <li>Learn HTML</li>
+        <li>Learn CSS</li>
+        <li>Learn JavaScript</li>
+    </ol>
+
+    <!-- 10. Description List -->
+    <h2>Description List</h2>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+    </dl>
+
+    <hr>
+
+    <!-- 11. Table -->
+    <h2>HTML Table</h2>
+
+    <table border="1">
+
+        <caption>Student Information</caption>
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Rahim</td>
+                <td>20</td>
+                <td>Bangladesh</td>
+            </tr>
+
+            <tr>
+                <td>Karim</td>
+                <td>22</td>
+                <td>Bangladesh</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <hr>
+
+    <!-- 12. HTML Form -->
+    <h2>HTML Form</h2>
+
+    <form action="#" method="get">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+
+        <br><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+
+        <br><br>
+
+        <!-- Radio Button -->
+        <p>Gender:</p>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <br><br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="html" name="skill" value="html">
+        <label for="html">HTML</label>
+
+        <br><br>
+
+        <!-- Dropdown -->
+        <label for="country">Select Country:</label>
+
+        <select id="country" name="country">
+            <option value="bd">Bangladesh</option>
+            <option value="in">India</option>
+            <option value="us">USA</option>
+        </select>
+
+        <br><br>
+
+        <!-- Textarea -->
+        <label for="message">Message:</label>
+        <br>
+
+        <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="30"
+        ></textarea>
+
+        <br><br>
+
+        <!-- Buttons -->
+        <button type="button" onclick="alert('Hello!')">
+            Click Me
+        </button>
+
+        <input type="reset" value="Reset">
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <hr>
+
+    <!-- 13. Semantic HTML -->
+    <header>
+        <h2>Website Header</h2>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>Welcome to my website.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Section</h2>
+            <p>This website teaches basic HTML.</p>
+        </section>
+
+        <article>
+            <h2>HTML Article</h2>
+            <p>HTML is used to create web pages.</p>
+        </article>
+
+        <aside>
+            <h3>Sidebar</h3>
+            <p>This is sidebar content.</p>
+        </aside>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>This is the contact section.</p>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- 14. Div and Span -->
+    <h2>Div and Span</h2>
+
+    <div>
+        <p>This paragraph is inside a div.</p>
+    </div>
+
+    <p>
+        This is a <span style="color: red;">red text</span>.
+    </p>
+
+    <hr>
+
+    <!-- 15. Blockquote -->
+    <h2>Blockquote</h2>
+
+    <blockquote>
+        Learning HTML is the first step in web development.
+    </blockquote>
+
+    <!-- 16. Quotation -->
+    <p>He said <q>HTML is easy to learn.</q></p>
+
+    <!-- 17. Abbreviation -->
+    <p>
+        <abbr title="HyperText Markup Language">HTML</abbr>
+        is a markup language.
+    </p>
+
+    <!-- 18. Address -->
+    <address>
+        Dhaka, Bangladesh
+    </address>
+
+    <hr>
+
+    <!-- 19. Code -->
+    <h2>HTML Code</h2>
+
+    <code>
+        console.log("Hello World");
+    </code>
+
+    <!-- 20. Preformatted Text -->
+    <pre>
+        Hello
+            World
+                HTML
+    </pre>
+
+    <!-- 21. Keyboard Input -->
+    <p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save.</p>
+
+    <hr>
+
+    <!-- 22. Details and Summary -->
+    <h2>Details Tag</h2>
+
+    <details>
+        <summary>What is HTML?</summary>
+        <p>HTML stands for HyperText Markup Language.</p>
+    </details>
+
+    <hr>
+
+    <!-- 23. Progress -->
+    <h2>Progress Bar</h2>
+
+    <progress value="70" max="100"></progress>
+
+    <!-- 24. Meter -->
+    <h2>Meter</h2>
+
+    <meter value="0.7">70%</meter>
+
+    <hr>
+
+    <!-- 25. Audio -->
+    <h2>Audio</h2>
+
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <hr>
+
+    <!-- 26. Video -->
+    <h2>Video</h2>
+
+    <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <hr>
+
+    <!-- 27. Iframe -->
+    <h2>Iframe</h2>
+
+    <iframe
+        src="https://example.com"
+        width="300"
+        height="200"
+        title="Example Website">
+    </iframe>
+
+    <hr>
+
+    <!-- 28. Figure and Figcaption -->
+    <h2>Figure</h2>
+
+    <figure>
+        <img
+            src="https://placehold.co/200x150"
+            alt="Sample Image"
+        >
+        <figcaption>Figure 1: Sample Image</figcaption>
+    </figure>
+
+    <hr>
+
+    <!-- 29. Time -->
+    <p>
+        Today's Date:
+        <time datetime="2026-10-18">October 18, 2026</time>
+    </p>
+
+    <!-- 30. Footer -->
+    <footer>
+        <p>&copy; 2026 My First HTML Website</p>
+        <p>Created by Your Name</p>
+    </footer>
+
+</body>
+</html>
