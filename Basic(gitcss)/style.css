@@ -1,0 +1,526 @@
+/* ===================================
+   1. UNIVERSAL SELECTOR
+=================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===================================
+   2. BODY STYLING
+=================================== */
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ===================================
+   3. CSS COLORS
+=================================== */
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #007bff;
+}
+
+.text {
+    color: rgb(50, 50, 50);
+}
+
+/* ===================================
+   4. CSS BACKGROUND
+=================================== */
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Background image example */
+
+.background-example {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ===================================
+   5. CSS FONT PROPERTIES
+=================================== */
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ===================================
+   6. CSS TEXT PROPERTIES
+=================================== */
+
+.text {
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 2;
+}
+
+/* ===================================
+   7. CSS WIDTH AND HEIGHT
+=================================== */
+
+.box {
+    width: 250px;
+    min-height: 150px;
+    max-width: 100%;
+}
+
+/* ===================================
+   8. CSS MARGIN
+=================================== */
+
+.box {
+    margin: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/* ===================================
+   9. CSS PADDING
+=================================== */
+
+.box {
+    padding: 20px;
+}
+
+/* ===================================
+   10. CSS BORDER
+=================================== */
+
+.box {
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+/* ===================================
+   11. CSS BOX SHADOW
+=================================== */
+
+.box {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ===================================
+   12. CSS DISPLAY
+=================================== */
+
+.box {
+    display: block;
+}
+
+/*
+Common display values:
+
+display: block;
+display: inline;
+display: inline-block;
+display: flex;
+display: grid;
+display: none;
+*/
+
+/* ===================================
+   13. CSS POSITION
+=================================== */
+
+.box {
+    position: relative;
+}
+
+/*
+Position types:
+
+position: static;
+position: relative;
+position: absolute;
+position: fixed;
+position: sticky;
+*/
+
+/* ===================================
+   14. CSS OVERFLOW
+=================================== */
+
+.box {
+    overflow: auto;
+}
+
+/*
+overflow: visible;
+overflow: hidden;
+overflow: scroll;
+overflow: auto;
+*/
+
+/* ===================================
+   15. CSS OPACITY
+=================================== */
+
+.box {
+    opacity: 1;
+}
+
+/* ===================================
+   16. CSS CURSOR
+=================================== */
+
+button {
+    cursor: pointer;
+}
+
+/* ===================================
+   17. CSS NAVIGATION BAR
+=================================== */
+
+nav {
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* ===================================
+   18. CSS SECTIONS
+=================================== */
+
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* ===================================
+   19. CSS BUTTON
+=================================== */
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ===================================
+   20. CSS HOVER
+=================================== */
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* ===================================
+   21. CSS TRANSITION
+=================================== */
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+/* ===================================
+   22. CSS FLEXBOX
+=================================== */
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    background-color: #28a745;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* ===================================
+   23. CSS GRID
+=================================== */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.grid-item {
+    background-color: orange;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* ===================================
+   24. CSS TRANSFORM
+=================================== */
+
+.flex-item:hover {
+    transform: translateY(-5px);
+}
+
+/*
+Other transform examples:
+
+transform: rotate(45deg);
+transform: scale(1.2);
+transform: translateX(20px);
+transform: skew(10deg);
+*/
+
+/* ===================================
+   25. CSS ANIMATION
+=================================== */
+
+.animation-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 10px;
+    animation: moveBox 3s infinite alternate;
+}
+
+@keyframes moveBox {
+    from {
+        transform: translateX(0);
+        background-color: red;
+    }
+
+    to {
+        transform: translateX(100px);
+        background-color: blue;
+    }
+}
+
+/* ===================================
+   26. CSS FORM
+=================================== */
+
+form {
+    max-width: 400px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ===================================
+   27. CSS FOCUS
+=================================== */
+
+input:focus {
+    border-color: #007bff;
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+/* ===================================
+   28. CSS PSEUDO-CLASSES
+=================================== */
+
+a:hover {
+    color: red;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+input:focus {
+    background-color: #f0f8ff;
+}
+
+/* ===================================
+   29. CSS PSEUDO-ELEMENTS
+=================================== */
+
+h2::before {
+    content: "★ ";
+    color: orange;
+}
+
+h2::after {
+    content: " ★";
+    color: orange;
+}
+
+/* ===================================
+   30. CSS FOOTER
+=================================== */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* ===================================
+   31. CSS MEDIA QUERY
+=================================== */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+}
+
+/* ===================================
+   32. CSS VARIABLES
+=================================== */
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #28a745;
+    --text-color: #333;
+}
+
+/* Example of using variables */
+
+.variable-example {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+/* ===================================
+   33. CSS Z-INDEX
+=================================== */
+
+.z-index-example {
+    position: relative;
+    z-index: 10;
+}
+
+/* ===================================
+   34. CSS OBJECT FIT
+=================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ===================================
+   35. CSS SCROLL BEHAVIOR
+=================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===================================
+   36. CSS USER SELECT
+=================================== */
+
+.no-select {
+    user-select: none;
+}
+
+/* ===================================
+   37. CSS VISIBILITY
+=================================== */
+
+.hidden-element {
+    visibility: hidden;
+}
+
+/* ===================================
+   38. CSS FILTER
+=================================== */
+
+.filter-example {
+    filter: grayscale(100%);
+}
+
+/* ===================================
+   39. CSS GRADIENT
+=================================== */
+
+.gradient-example {
+    background: linear-gradient(
+        to right,
+        blue,
+        purple
+    );
+}
+
+/* ===================================
+   40. CSS BOX SIZING
+=================================== */
+
+* {
+    box-sizing: border-box;
+}
